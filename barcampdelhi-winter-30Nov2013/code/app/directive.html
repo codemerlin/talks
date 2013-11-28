@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>Intro To AngularJS</title>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/directive.js"></script>
+</head>
+<body ng-controller="PersonController as person">
+    <p>{{person.name}}</p>
+    <input ng-model="person.name" name="nametxt" />
+</body>
+</html>
