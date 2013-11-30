@@ -7,6 +7,11 @@ myAppModule.controller("PersonController"
     this.name = "John";
 }]);
 
-myAppModule.directive("ngRedText", function () {
-    
+myAppModule.directive("ngRedBorder", function () {
+    return {
+        restrict: "A",
+        link: function (scope, element, attr) {
+            element.css({ "border": "1px solid red" });
+        }
+    };
 });
